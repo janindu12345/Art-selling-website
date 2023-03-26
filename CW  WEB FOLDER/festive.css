@@ -1,0 +1,25 @@
+.first{
+	    padding-left:15%;
+		
+	  }
+	  #navlist li {
+	    display:inline;
+		padding-right:20px;
+	  }
+	  li a{
+	    color:white;
+	  }
+	  ul {
+	    background-color: #333;
+		padding-top:10px;
+		padding-bottom:10px;
+		position:fixed;}
+	  p, h4 {
+	    padding-left:10px;
+		
+	  }	
+	  body{
+	    background-color:#c7f2b4;
+	  }
+	  .padding{
+	    padding:10px;}

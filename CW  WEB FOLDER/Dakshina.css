@@ -1,0 +1,39 @@
+table,td,th   {
+   border:3px solid #F5B041;
+   border-collapse:collapse;
+   }
+	
+	
+th,td   {
+   padding:3%;
+   }
+	
+
+div   {
+   position:relative;
+   padding:5% 5% 5% 30%;
+   }
+
+
+caption   {
+   padding:1%;
+   position:relative;
+   font-size:200%;
+   }
+
+
+th   {  
+   font-size:140%;
+   }
+   
+td   {
+	color: #F0F3F4;
+    font-size:120%;
+	}
+	
+body   {
+	background-image:url("Sri-Lanka-Negombo-Sailboat-Beach-IS-42695694-Lg-RGBfeature.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	overflow:hidden;
+	}

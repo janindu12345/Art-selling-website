@@ -1,0 +1,191 @@
+<!doctypr html>
+ <html lang="en">
+  <head>
+   <title>SLTG | Register Now</title>
+    <link rel="stylesheet" href="QueryPageCss.css">
+  </head>
+  
+  
+  <script>
+
+
+function checkq(){
+let x = document.forml.namel.value;
+  let y = document.forml.countryl.value;
+  let m = document.forml.addressl.value;
+  let n = document.forml.agel.value;
+  let o = document.forml.numberl.value;
+  
+  if (x == "") {
+    alert("Name is requierd");
+    return false;
+  }
+  if (y == "") {
+    alert("Enter your country");
+    return false;
+  }
+  if (m== "") {
+    alert(" E-mail adress");
+    return false;
+  }
+  if (n== "") {
+    alert("Enter your age");
+    return false;
+  }
+  if (o == "") {
+    alert("Enter the contact number");
+    return false;
+  }
+document.getElementById("FORM").style.display= "none";
+document.getElementById("result").style.display = "block";
+
+
+
+document.getElementById('name').innerHTML =document.forml.namel.value;
+document.getElementById('country').innerHTML = document.forml.countryl.value;
+document.getElementById('mail').innerHTML = document.forml.addressl.value;
+
+document.getElementById('age').innerHTML = document.forml.agel.value;
+document.getElementById('birth').innerHTML = document.forml.bop.value;
+document.getElementById('number').innerHTML = document.forml.numberl.value;
+return false;
+}
+
+
+function editForm(){
+document.getElementById("FORM").style.display= "block";
+document.getElementById("result").style.display = "none";
+return false;
+}
+function sendForm(){document.getElementById("result").style.display= "none";
+return false;}
+
+   
+</script>
+ 
+
+ <body>
+  
+   <div class="navbar">
+          <a href="HomePage.html">HOME</a>
+        
+          <a href="Studentdetails.html">ABOUT US</a>
+		    <a href="sitemap.html">SITE MAP</a>
+		  <a href="thumbnailImages.html">VISIT US</a>
+		  <a href="BuyProducts.html">BUY PRODUCTS</a>
+		  <a href="QueryPage.html">REGISTER NOW</a>
+		  <a href="quiznew.html">QUIZ</a>
+      </div>
+ 
+ 
+   <form name="forml" action="manith.20210457@iit.ac.lk" " method="post">
+   
+   <div id="FORM">
+
+     <label for="nameeid" >Full Name:</label><br>
+        <input class="text" type="text" name="namel" id="nameeid"  autofocus placeholder="Enter your name">
+      <br/><br>
+	  
+	  
+
+     <label for="countryid">Country:</label></br>
+        <input class="text" id="countryid" name="countryl" list="countrya" placeholder="Add your country">
+         <datalist id="countrya">
+           <option value="Sri lanka">
+		   <option value="India">
+		   <option value="Japan">
+           <option value="China">
+		   <option value="America">
+		   <option value="South Africa">
+           <option value="Australia">
+		   <option value="New zeland">
+		   <option value="Thailand">
+		   <option value="Malasia">
+		   <option value="Singapour">
+		   <option value="Vietnam">
+		   <option value="Bangaladesh">
+		   <option value="Korea">
+           <option value="Spain">
+		   <option value="Russia">
+		   <option value="Brazil">
+           <option value="Canada">
+		   <option value="Nepal">
+		   <option value="Swedan">
+		   <option value="Denmark">
+		   <option value="Germany">
+           <option value="Qatar">
+		   <option value="Syria">
+           <option value="Maldives">
+		   <option value="Lebonon">
+		   <option value="UAE">
+		   <option value="Mexico">
+		   <option value="Argentina">
+		   <option value="Italy">
+		   <option value="Poland">
+           <option value="Austria">
+		   <option value="France">
+		   <option value="England">
+           <option value="Bahrain">
+        </datalist>
+        <br/><br/>
+
+
+   <label for="addressid" >E-mail:</label><br>
+    <input  class="text" type="email" name="addressl" id="addressid" rows="5" cols="25"></textarea>
+     <br/><br/>
+	 
+	 
+	 
+ 
+  <label for="ageid"  >Age:</label><br>
+   <input class="text" type="number" name="agel" id="ageid" min="1">
+   <br/><br>
+
+  <label for="birthid" >Date of Birth:</label><br>
+    <input class="text" type="date" name="bop" id="birthid">
+	<br/><br/>
+	
+	
+ <label for="numberid"  >Contact Number:</label><br>
+   <input class="text" type="text" name="numberl" id="numberid" >
+   <br/><br> <br/><br>
+<input class="text" type="reset"  name="resetbutton" value="Reset">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input class="text" type="submit" value="view query" onclick="return checkq()">
+ 		
+ 
+ </div>
+ 
+  <div id="result">
+    Name :            <p id="name"></p>
+	Country :         <p id="country"></p>
+	E-mail :          <p id="mail"></p>
+	
+    Age :             <p id="age"></p>
+    Date of birth :   <p id="birth"></p>
+    Contact no:       <p id="number"></p>
+	
+	  <input type="button"  class="button submitbtn" value="Edit" onclick=" return editForm()">
+	  <input type="submit" class="button submitbtn" value="send" onclick="return sendForm()">
+	  		
+  </div>
+      
+ 
+  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+
+
+
+   </form>
+   
+ </body>
+</html>

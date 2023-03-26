@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>QUIZ</title>
+	<link rel="stylesheet" href="quiznew.css">
+	  <link rel="stylesheet" href="footer.css" >
+
+</head>
+     
+<body>
+      <div class="navbar">
+          <a href="HomePage.html">HOME</a>
+        
+          <a href="Studentdetails.html">ABOUT US</a>
+		    <a href="sitemap.html">SITE MAP</a>
+		  <a href="thumbnailImages.html">VISIT US</a>
+		  <a href="BuyProducts.html">BUY PRODUCTS</a>
+		  <a href="QueryPage.html">REGISTER NOW</a>
+		  <a href="Quiz.html">QUIZ</a>
+      </div>
+	  
+	  <div id="body">
+    
+ 	
+	<h1 id="firstline"><img src="hedder.jpg" width="50%" height="20%" alt="hedder"></h1>
+	<p class="ins" >Please select the correct answer. Time duration 60 Seconds.</p>
+	<input type="button" id="start" value="Start" class="start" onclick="start();">
+	
+   
+		<p id="final">  </p>
+    	<div id="timeremaining"> Time Remaining: <span id="timeremainingvalue"> 60 </span> sec </div>
+
+		<div class="after_btn" id="after_btn">
+    	<form id="quiz" class="qiuz" name="quiz">
+    	<p class="p1" >(1) What is the currency of Sri Lanka? </p>
+    		<input type="radio" name="question1" value="Dollar" > Dollar <br>
+    		<input type="radio" name="question1" value="Yen" > Yen <br>
+			<input type="radio" name="question1" value="Euro" > Euro <br>
+			<input type="radio" name="question1" value="Rupee" > Rupee 
+
+    	<p class="p2">(2) What is the longest river in Sri Lanka? </p>
+    		<input type="radio" name="question2" value="Nilwala">Nilwala river <br>
+    		<input type="radio" name="question2" value="Kalani"> Kalani river <br>
+			<input type="radio" name="question2" value="Mahawali" > Mahawali river <br>
+			<input type="radio" name="question2" value="Kalu" > Kalu river <br>
+
+		<p class="p3">(3) Where Blue beach island located?</p>
+            <input type="radio" name="question3" value="Nilwella">Nilwella<br>
+            <input type="radio" name="question3" value="Dickwella">Dickwella<br>
+            <input type="radio" name="question3" value="Kurunagala">Kurunagala<br>
+            <input type="radio" name="question3" value="Bandarawela">Bandarawela
+
+		<p class="que">(4) What is Mirissa famous for?</p>
+			<input type="radio" name="question4" value="Coral Reef">Coral Reef<br>
+			<input type="radio" name="question4" value="Camping">Camping<br>
+			<input type="radio" name="question4" value="Whale Watching">Whale Watching<br>
+			<input type="radio" name="question4" value="Hiking">Hiking
+
+		<p class="que">(5) What is the Nagadipa Temple located?</p>
+			<input type="radio" name="question5" value="Kandy">Kandy<br>
+			<input type="radio" name="question5" value="Jaffna">Jaffna<br>
+			<input type="radio" name="question5" value="Dickwella">Dickwella<br>
+			<input type="radio" name="question5" value="Kalutara">Kaluthara
+
+		<p class="que">(6) What is the tallest waterfall in Sri Lanka?</p>
+			<input type="radio" name="question6" value="Dunhida Falls">Dunhida Falls<br>
+			<input type="radio" name="question6" value="Babarakanda Falls">Babarakanda Falls<br>
+			<input type="radio" name="question6" value="Rawana Falls">Rawana Falls<br>
+			<input type="radio" name="question6" value="Baker Falls">Baker Falls
+
+		<p class="que">(7) How was Sri lanka formerly know?</p>
+			<input type="radio" name="question7" value="Ceylon">Ceylon<br>
+			<input type="radio" name="question7" value="Ruhuna">Ruhuna<br>
+			<input type="radio" name="question7" value="Kotte">Kotte<br>
+			<input type="radio" name="question7" value="Burumaya">Burumaya
+
+		<p class="que">(8) In which distric Sigiriya located?</p>
+			<input type="radio" name="question8" value="Kandy">Kandy<br>
+			<input type="radio" name="question8" value="Jaffna">Jaffna<br>
+			<input type="radio" name="question8" value="Matale">Matale<br>
+			<input type="radio" name="question8" value="Matara">Matara
+
+		<p class="que">(9) In which distric Temple of the Tooth located?</p>
+			<input type="radio" name="question9" value="Kandy">Kandy<br>
+			<input type="radio" name="question9" value="Jaffna">Jaffna<br>
+			<input type="radio" name="question9" value="Dickwella">Dickwella<br>
+			<input type="radio" name="question9" value="Kalutara">Kaluthara
+
+		<p class="que">(10) What is Hikkaduwa famous for?</p>
+			<input type="radio" name="question10" value="Camping">Camping<br>
+			<input type="radio" name="question10" value="Whale Watching">Whale Watching<br>
+			<input type="radio" name="question10" value="Hiking">Hiking<br>
+			<input type="radio" name="question10" value="Coral Reef">Coral Reef<br><br>
+
+
+
+    	<input type="button" id="submit" value="Submit Quiz"  class="submit" onclick="result();">
+		</div>
+
+		<div class="container">
+			<p id="abc">Time : <span id="second">00</span>:<span id="tens">00</span>s</p>
+		</div>
+	 
+     <p id="time"></p>
+     <p id="score"> </p> 	
+     <p id="p1">  </p>
+     <p id="p2">  </p>
+	 <p id="p3">  </p>
+	 <p id="p4">  </p>
+	 <p id="p5">  </p>
+	 <p id="p6">  </p>
+	 <p id="p7">  </p>
+	 <p id="p8">  </p>
+	 <p id="p9">  </p>
+	 <p id="p10">  </p>
+	
+    
+    
+	 
+	</div>
+
+<script>
+	
+	function start(){
+		var timeremaining;
+		timeremaining=60; 
+		document.getElementById("timeremainingvalue").innerHTML=timeremaining;
+		startcountdown();
+		
+	}
+	
+
+function result(){
+
+		var question1 = document.quiz.question1.value;
+		var question2 = document.quiz.question2.value;
+		var question3 = document.quiz.question3.value;
+		var question4 = document.quiz.question4.value;
+		var question5 = document.quiz.question5.value;
+		var question6 = document.quiz.question6.value;
+		var question7 = document.quiz.question7.value;
+		var question8 = document.quiz.question8.value;
+		var question9 = document.quiz.question9.value;
+		var question10 = document.quiz.question10.value;
+
+		document.getElementById("timeremaining").style.visibility="hidden";
+		
+		var score=0;
+
+		if (question1== "Rupee"){
+			score=score+2
+			document.getElementById("p1").innerHTML=("(1) Correct");	
+		}
+		else{
+			score--
+			document.getElementById("p1").innerHTML=("(1) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Rupee]");
+		}
+
+        if (question2=="Mahawali"){
+        	score=score+2;
+        	document.getElementById("p2").innerHTML=("(2) Correct ");	
+        }
+        else{
+        	score--;
+        	document.getElementById("p2").innerHTML=("(2) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Mahawali]");	
+        }
+
+		if(question3=="Nilwella"){
+			score=score+2;
+        	document.getElementById("p3").innerHTML=("(3) Correct ");	
+		}
+		else{
+        	score--;
+        	document.getElementById("p3").innerHTML=("(3) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Nilwella]");	
+        }
+
+		if (question4=="Whale Watching"){
+        	score=score+2;
+        	document.getElementById("p4").innerHTML=("(4) Correct ");	
+        }
+        else{
+        	score--;
+        	document.getElementById("p4").innerHTML=("(4) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Whale Watching]");	
+        }
+
+		if(question5=="Jaffna"){
+			score=score+2;
+        	document.getElementById("p5").innerHTML=("(5) Correct ");	
+		}
+		else{
+        	score--;
+        	document.getElementById("p5").innerHTML=("(5) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Jaffna]");	
+        }
+
+		if(question6=="Babarakanda Falls"){
+			score=score+2;
+        	document.getElementById("p6").innerHTML=("(6) Correct ");	
+		}
+		else{
+        	score--;
+        	document.getElementById("p6").innerHTML=("(6) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Babarakanda Falls]");	
+        }
+
+		if(question7=="Ceylon"){
+			score=score+2;
+        	document.getElementById("p7").innerHTML=("(7) Correct ");	
+		}
+		else{
+        	score--;
+        	document.getElementById("p7").innerHTML=("(7) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Ceylon]");	
+        }
+
+		if(question8=="Matale"){
+			score=score+2;
+        	document.getElementById("p8").innerHTML=("(8) Correct ");	
+		}
+		else{
+        	score--;
+        	document.getElementById("p8").innerHTML=("(8) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Matale]");	
+        }
+
+		if(question9=="Kandy"){
+			score=score+2;
+        	document.getElementById("p9").innerHTML=("(9) Correct ");	
+		}
+		else{
+        	score--;
+        	document.getElementById("p9").innerHTML=("(9) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Kandy]");	
+        }
+
+		if(question10=="Coral Reef"){
+			score=score+2;
+        	document.getElementById("p10").innerHTML=("(10) Correct ");	
+		}
+		else{
+        	score--;
+        	document.getElementById("p10").innerHTML=("(10) Incorrect &nbsp;&nbsp;&nbsp;&nbsp;[correct answer - Coral Reef]");	
+        }
+
+
+
+        
+        if (score<=10){
+        	 document.body.style.backgroundColor ="#e879aa";
+        }
+
+        else{
+        	 document.body.style.backgroundColor = "#5af998";
+        }
+        document.getElementById("score").innerHTML="Your Score is = "+ score;
+		
+
+	}
+
+	function startcountdown(){ 
+		
+		var timeremaining;
+		var action;
+		timeremaining=60;
+		 
+
+		 action=setInterval(function(){
+		 timeremaining -= 1;
+	     document.getElementById("timeremainingvalue").innerHTML=timeremaining;
+	     if(timeremaining==0){
+	     	result();
+			
+
+	     }
+		 
+		 
+	 }, 1000);
+	 
+	}
+	
+	//Time
+	var seconds = 00;
+    var tens = 00;
+    var OutputTens = document.getElementById('tens');
+    var OutputSeconds = document.getElementById('second');
+    var buttonStart = document.getElementById('start');
+    var buttonStop = document.getElementById('submit');
+    var Interval;
+       
+      buttonStart.addEventListener('click',()=>{
+        clearInterval(Interval);
+        Interval = setInterval(startTime, 10);
+      });
+
+      buttonStop.addEventListener('click',()=>{
+        clearInterval(Interval);
+      });
+
+      function startTime(){
+        tens++;
+        if(tens<=9){
+          OutputTens.innerHTML = "0" + tens;
+        }
+        if(tens> 9){
+          OutputTens.innerHTML = tens;
+        }
+        if(tens>99){
+          seconds++;
+          OutputSeconds.innerHTML = "0" + seconds;
+          tens = 0;
+          OutputTens.innerHTML = "0" + tens;
+        }
+        if(seconds > 9){
+          OutputSeconds.innerHTML = seconds;
+        }
+		if(seconds==60){
+			document.getElementById("abc").style.visibility="hidden";
+			document.getElementById("time").innerHTML=("Time : 60.00s");
+		}
+      }
+
+	
+	
+</script>
+  <div class="footer">
+	  <div class="footer-content">
+	  
+	    <div class="footer-part about">
+		  <h1 class="logo-text"><span>SLTG</span> | Sri Lankan Travelgram</h1>
+		  <p class="para">Sri Lanka, the heaven of the Indian ocean is one of the most famous<br/> 
+		  vacationerlocations from one side of the planet to the other.<br/> As indicated by the movement planet
+		  audit, it is in the first among<br/> the best nations to go in 2019.</p>
+		  <div class="contactn">
+		  
+		  <div class="PE">
+		    <span><i class="phone"></i> &nbsp; 011-1234567</span><br/>
+			<span><i class="email"></i> &nbsp; info@sltg.com</span>
+		  </div>
+		  
+		 </div>
+		</div>
+		<div class="linkf">
+		  <h2>Page Editors<a href="Janindu.html" alt="Editor page"></a></h2><br>
+		  
+		</div>
+		<div class="contact">
+		  <h2>Contact Us</h2><br>
+		  <form action="footer.html" method="post">
+		    <input type="email" name="email" class="text-input contact-input" placeholder="Your Email Address..."><br><br>
+			<textarea name="message" class="text-input contact-input" placeholder="Your Message..."></textarea><br><br>
+			<button type="submit" class="btn">Send</button>
+		  </form>
+		</div>
+	  </div>
+	     <a href="#firstline" class="goupper"><img src="index.png"  width="3%" height="3%" alt="go upper"> </a>
+	  <div class="footer-bottom">
+	   
+	
+	   &copy; SLTG | Sri Lankan Travelgram
+	  
+	  </div>
+	
+	</div>
+	
+   <a href="#firstline" class="goupper"><img src="index.png"  width="3%" height="3%" alt="go upper"> </a>
+</body>
+</html>	
+	

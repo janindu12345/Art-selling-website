@@ -1,0 +1,101 @@
+#navlist li {
+	    display:inline;
+		padding-right:20px;
+	  }
+	  li a{
+	    color:white;
+	  }
+	  ul {
+	    background-color: #333;
+		padding-top:10px;
+		padding-bottom:10px;
+		position:fixed;
+		margin:auto;
+		overflow: hidden;
+	    width: 700px;
+		text-align:center;
+	  }
+	  h1 {
+	    font-family:Lucida Sans;
+		font-size:35px;
+		padding:10px;
+		text-shadow:2px 2px blue;
+	  }
+	  h3{
+	    font-family:Verdana;
+		font-size:15px;
+		padding:10px;
+	  }
+	  img:hover {
+	    box-shadow : 0 0 2px 1px blue;
+	  }
+	  .nature {
+		border-radius:8px;
+		padding:10px;
+	  }
+	  .image1 {
+	    position:relative;
+		float:left;
+		text-align:center;
+		color:white;
+		padding:10px;
+	  }
+	  .wild{
+	    display:block;
+		width:100%;
+		padding-left:10px;
+		}
+	  .imageOverlay {
+	    position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		color:#FFFFFF;
+		background:rgba (0 0 0 0.6);
+	  
+	  
+	  }
+	  .centerText {
+		font-family:Verdana;
+		font-size:20px;
+	  }
+	  section{
+	    position:relative;
+		width:100%;
+		height:100%;
+	  }
+	  .bg {
+	    top:0;
+		left:0;
+		width:90%;
+		height:80%;
+		font-size:20px;
+        font-weight:700;
+		padding:10px;
+		color:rgba(0 0 0 0.2);
+	  }
+	  .text {
+	    position:relative;
+	  }
+	  .changecolor {
+	    position:fixed;
+		
+	  }
+	 .navbar {position:fixed;
+         z-index:10;
+         background-color:#EAF2F8;
+         width:100%;
+         height:50px;}
+.navbar a {
+  float: left;
+
+ 
+  padding: 14px 16px;
+
+  text-decoration: none;
+font-size: 20px;}
+
+.goupper{
+	 padding-left: 95%;
+ }

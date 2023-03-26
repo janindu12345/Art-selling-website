@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<title>SLTG </title>
+	<link rel="stylesheet" href="thumbnailimages.css">
+	 <link rel="stylesheet" href="footer.css" >
+  </head>
+  <body id="l">
+  <div class="navbar">
+          <a href="HomePage.html">HOME</a>
+        
+          <a href="Studentdetails.html">ABOUT US</a>
+		    <a href="sitemap.html">SITE MAP</a>
+		  <a href="thumbnailImages.html">VISIT US</a>
+		  <a href="BuyProducts.html">BUY PRODUCTS</a>
+		  <a href="QueryPage.html">REGISTER NOW</a>
+		  <a href="quiznew.html">QUIZ</a>
+      </div>
+  
+   
+      
+	
+	
+	<div class="changecolor">
+	  <section>
+	    <div class="bg">Choose color for background</div>
+		  <select onchange="changecolor(this.value)">
+		    <option value="#e5cce5">Purple</option>
+		    <option value="#ae55f1">Violet</option>
+		    <option value="#15FEA0">Green</option>
+		    <option value="#ffd0e9">Pink</option>
+		    <option value="#509ce2">Blue</option>
+		  </select>
+	  </section>
+	</div>
+	  <script>
+	    function changecolor(y) {
+		  document.bgColor=y;
+		  }
+	  </script>
+	  
+	  
+	
+	  
+	  <div class="nature">
+        <img class="nature" src="nature.jpeg" alt="nature" width="1300px" height="300px">
+	  </div>
+    
+    <select id="textcolor">
+	  <option>Choose a color</option>
+	  <option value="red">Red</option>
+	  <option value="green">Green</option>
+	  <option value="orange">Orange</option>
+	  <option value="brown">Brown</option>
+	  <option value="blue">Blue</option>
+	</select>
+	
+	<script>
+	  document.getElementById('textcolor').onchange = changeColor;
+	    function changeColor() {
+		  document.body.style.color=value;
+		  return false;
+		}
+	</script>
+	
+    <h1>Welcome to Sri Lanka</h1>
+	<h3>See what's waiting for you on your next island getaway.<br>
+    Savour the unique experiences this island treasure has to offer.</h3><br><br>
+
+	
+	
+	
+	<div class="text">
+	
+	  <a href="Wild.html" target="_blank">
+	  <img onmouseover="bigImage(this)" onmouseout="normalImage(this)" border="0" src="	wild.jpg" alt="Wild"></a>
+
+	  <a href="BirdWatching.html" target="_blank">
+	  <img onmouseover="bigImage(this)" onmouseout="normalImage(this)" border="0" src="bird.jpg" alt="Bird"></a>
+
+	  <a href="Hotels.html" target="_blank">
+	  <img onmouseover="bigImage(this)" onmouseout="normalImage(this)" border="0" src="666.jpg" alt="Hotel"></a>
+	
+	  <a href="Festive.html" target="_blank">
+	  <img onmouseover="bigImage(this)" onmouseout="normalImage(this)" border="0" src="festive.jpg" alt="Festive" width="300px" height="190px"></a>
+	  
+	  <a href="Heritage.html" target="_blank">
+	  <img onmouseover="bigImage(this)" onmouseout="normalImage(this)" border="0" src="heritage.jpg" alt="Hotel"></a>
+	</div>
+	<script>
+	function bigImage(x) {
+	  x.style.height="400px";
+	  x.style.width="700px";
+	}
+	
+	function normalImage(x) {
+	  x.style.height="300px";
+	  x.style.width="600px";
+	}
+	</script>
+	
+	</div>
+	<div class="footer">
+	  <div class="footer-content">
+	  
+	    <div class="footer-part about">
+		  <h1 class="logo-text"><span>SLTG</span> | Sri Lankan Travelgram</h1>
+		  <p class="para">Sri Lanka, the heaven of the Indian ocean is one of the most famous<br/> 
+		  vacationerlocations from one side of the planet to the other.<br/> As indicated by the movement planet
+		  audit, it is in the first among<br/> the best nations to go in 2019.</p>
+		  <div class="contactn">
+		  
+		  <div class="PE">
+		    <span><i class="phone"></i> &nbsp; 011-1234567</span><br/>
+			<span><i class="email"></i> &nbsp; info@sltg.com</span>
+		  </div>
+		  
+		 </div>
+		</div>
+		<div class="linkf">
+		  <h2>Quick Links</h2><br>
+		  
+		</div>
+		<div class="contact">
+		  <h2>Contact Us</h2><br>
+		  <form action="footer.html" method="post">
+		    <input type="email" name="email" class="text-input contact-input" placeholder="Your Email Address..."><br><br>
+			<textarea name="message" class="text-input contact-input" placeholder="Your Message..."></textarea><br><br>
+			<button type="submit" class="btn">Send</button>
+		  </form>
+		</div>
+	  </div>
+	  
+	  <div class="footer-bottom">
+	    &copy; SLTG | Sri Lankan Travelgram
+	  </div>
+	</div>
+   <a href="#l" class="goupper"><img src="index.png"  width="3%" height="3%" alt="go upper"> </a>
+	
+  </body>
+</html>  

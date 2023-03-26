@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>by prodoucts</title>
+<link rel="stylesheet" href="BuyProducts.css">
+<body>
+<h1> Thank you all for visiting our country.We know that wonder Asia is what has given the best to the whole world for decades. when you come to sri lanka ,carry an indelible memory of life when you leave Sri Lanka. </h1>
+<div id="divpic">
+<a href="jwe.jpg">
+<img src="jwe.jpg" width=250 width=250></a>
+<span class="photoDesc">Ladies neckless<br>Rs 2000000</span>
+</div>
+
+
+
+<div id="divpic">
+<a href="saree.jpg">
+<img src="saree.jpg" width=250 width=250></a>
+<span class="photoDesc">Bathik saree<br>Rs 3500</span>
+</div>
+<div id="divpic">
+<a href="bag 2.jpg">
+<img src="bag 2.jpg" width=250 width=250></a>
+<span class="photoDesc">leather bag<br>Rs 35000</span>
+</div>
+<div id="divpic">
+<a href="mask.jpeg">
+<img src="mask.jpeg" width=250 width=250></a>
+<span class="photoDesc">Traditional Mask<br>Rs 2000</span>
+</div>
+
+<h2> .....................................................Short discription about our products..................................................</h2>
+
+
+<p><ul>Bathik saree<ul>,<li>Fabric Material:Voile,Silk(100% cotton)</li><li>Technique:Bathik(Wax-Resist Dyeing</li>
+<li>colour:Red and Orange</li><li>dye type:Naphthol Dye <li>we provide bathik saree designs for the farirest price in Sri Lanka and our products are in 100% best quality.</li></ul></p>
+
+
+<p>Bag<ul><li>Material:leather</li><li>colour:Brown</li><li>Technique:Full waterproof(with two handles)</li><li>style:Can be used by Ladies or boy.<li> We provide leather bag designs for the farirest price in Sri Lanka and our products are in 100% best quality.</li></ul></p>
+
+
+<p>Traditional mask<ul><li>Material:wood</li><li>we provide Amabalangoda Traditional Mask for the farirest price in Sri Lanka and our products are in 100% best quality.</li></ul></p>
+
+<p>Ladies neckless<ul><li>Material: silver,gold and platinum</li><li> Gems items:Ruby,Rose Quartz,Amethyst,Spinel</li><li>we provide sri lanken jewelery designs for the farirest price in Sri Lanka and our products are in 100% best quality.</li></ul></ul></p>
+<h2>welcome</h2>
+<div class="container-fluid">
+<div class="container">
+<div class="part1">
+<fieldset>
+<legend><b> Enter Your personal Information</b></legend>
+
+
+<body>
+
+Full Name:<form action="/action_page.php" method="post">
+  <input type="text" name="fname" id="name"placeholder=" Enter Your Full name" required>
+  <input type="submit" value="Submit">
+</form>
+
+
+Your Email:<form action="/action_page.php" method="post">
+  <input type="text" name="fname" id="email"placeholder=" Enter Your Email" required>
+  <input type="submit" value="Submit">
+</form>
+
+
+Phone No:<form action="/action_page.php" method="post">
+  <input type="number" name="fname" id="number"placeholder=" Enter Your No" required>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+
+
+
+</fieldset>
+</div><br><br>
+<div class="part2"
+<fieldset>
+<legend><b>Enter Your Orders</b></legend><br><br>
+
+Neckless(Rs.2000000) :<input type="text" id="Neckless"><br/><br/>
+
+Saree(Rs.3500):  <input type="text" id="Saree"><br/></br>
+
+Bag(Rs.3500)  :<input type="text"id="Bag"><br/></br>
+
+Mask(Rs.2000) : <input type="text"id="Mask"><br/></br>
+</fieldset>
+</div>
+</div>
+<div class="container">
+<fieldset>
+
+<legend><b>Your invoice</b></legend>
+
+<h3> Your name: <span id="name2"></span></h3>
+<h3>Email:<span id="email2"></span></h3>
+<table border="1">
+<thead>
+<tr><th>Menu</th><th>price</th><th>Quantity</th><th>Amount</th></tr>
+</thead>
+<tbody id="BillStatement">
+</tbody>
+</table></fieldset>
+<h1>Total Amount:<span id="amount"></span></h1>
+</div>
+</div>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+
+
+
+var Neckless_price=2000000, Saree_price=3500, Bag_price=3500,Mask_price=2000;
+var Neckless_q=0, Saree_q=0, Bag_q=0, Mask_q=0;
+var NecklessPriceShow="",SareePriceShow="",BagPriceShow="",MaskPriceShow="";
+
+
+document.getElementById("name").addEventListener("keyup",function(){
+  name=document.getElementById("name").value;
+document.getElementById("name2").innerHTML=name;
+});
+document.getElementById("email").addEventListener("keyup",function(){
+  email=document.getElementById("email").value;
+document.getElementById("email2").innerHTML=email;
+});
+
+
+
+ document.getElementById("Neckless").addEventListener("keyup",function(){
+ if(this.value==""||this.value==0){
+ NecklessPriceShow="";
+ Neckless_q=0;
+ ShowBill();
+ }else{
+ Neckless_q=this.value;
+ NecklessPriceShow="<tr><td>Neckless</td><td>Rs."+Neckless_price+"</td><td>"+Neckless_q+"</td><td>"+Neckless_price+"x"+Neckless_q+"="+Neckless_price*Neckless_q+"</td></tr>";
+ ShowBill();
+ 
+ }
+}); 
+
+document.getElementById("Saree").addEventListener("keyup",function(){
+ if(this.value==""||this.value==0){
+ SareePriceShow="";
+ Saree_q=0;
+ ShowBill();
+ }else{
+ Saree_q=this.value;
+ SareePriceShow="<tr><td>Saree</td><td>Rs."+Saree_price+"</td><td>"+Saree_q+"</td><td>"+Saree_price+"x"+Saree_q+"="+Saree_price*Saree_q+"</td></tr>";
+ ShowBill();
+ 
+ }
+}); 
+document.getElementById("Bag").addEventListener("keyup",function(){
+ if(this.value==""||this.value==0){
+ BagPriceShow="";
+ Bag_q=0;
+ ShowBill();
+ }else{
+ Bag_q=this.value;
+ BagPriceShow="<tr><td>Bag</td><td>Rs."+Bag_price+"</td><td>"+Bag_q+"</td><td>"+Bag_price+"x"+Bag_q+"="+Bag_price*Bag_q+"</td></tr>";
+ ShowBill();
+ 
+ }
+}); 
+document.getElementById("Mask").addEventListener("keyup",function(){
+ if(this.value==""||this.value==0){
+ MaskPriceShow="";
+ Mask_q=0;
+ ShowBill();
+ }else{
+ Mask_q=this.value;
+ MaskPriceShow="<tr><td>Mask</td><td>Rs."+Mask_price+"</td><td>"+Mask_q+"</td><td>"+Mask_price+"x"+Mask_q+"="+Mask_price*Mask_q+"</td></tr>";
+ ShowBill();
+ 
+ }
+}); 
+
+
+
+
+
+
+
+
+function ShowBill(){
+document.getElementById("BillStatement").innerHTML=NecklessPriceShow+SareePriceShow+BagPriceShow+MaskPriceShow;
+document.getElementById("amount").innerHTML=Neckless_price*Neckless_q+Saree_price*Saree_q+Bag_price*Bag_q+Mask_price*Mask_q;
+}
+  
+
+
+</script>
+</body>
+</html>
+

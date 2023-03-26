@@ -1,0 +1,44 @@
+body{background-image:url("beautiful-places-in-sri-lanka.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+overflow:hidden;
+
+}
+
+form{position:absolute;
+padding:7% 40%;
+}
+
+label{position:relative;
+
+font-size:125%;
+color:#FDEBD0    ;
+font-family: "Lucida Console", "Courier New", monospace;}
+
+
+
+
+
+.navbar {position:fixed;
+         z-index:10;
+         background-color:#EAF2F8;
+         width:100%;
+         height:50px;}
+.navbar a {
+  float: left;
+
+ 
+  padding: 14px 16px;
+
+  text-decoration: none;
+  font-size: 20px;}
+
+
+.text{background-color:  #FDEBD0    ;
+padding:1em;
+border-radius:3px;}
+
+#result{color:#D1F2EB;
+font-size:125%;
+display:none;}
+
